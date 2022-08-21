@@ -1,0 +1,21 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8082
+spring:
+  application:
+    name: 'api-usuario-pizzaria'
+  data:
+    mongodb:
+      database: hackathon-usuario
+      host: localhost
+      port: 27017
+      repositories:
+        enabled: true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
